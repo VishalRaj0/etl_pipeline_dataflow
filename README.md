@@ -12,7 +12,7 @@
 
 - GS Bucket
 
-![GS Bucket](\screenshots\1.png)
+![](screenshots/1.png)
 
 - Dataflow Job
 
