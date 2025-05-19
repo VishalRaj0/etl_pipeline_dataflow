@@ -6,6 +6,11 @@ resource "google_storage_bucket" "dataflow_bucket" {
   force_destroy = true
 }
 
+resource "google_storage_bucket_object" "test_folder" {
+  bucket = google_storage_bucket.dataflow_bucket.id
+  name   = "test/"
+}
+
 resource "google_storage_bucket_object" "csv_obj" {
   bucket = google_storage_bucket.dataflow_bucket.id
   name   = "1000_ml_jobs_us.csv"
